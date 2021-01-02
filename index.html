@@ -1,238 +1,70 @@
-<html>
-    <head>
-      <meta name="description" content="Site Responsive Hotel WeFormyou.fr">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@100&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width-device-width,initial-scale:1,shrink-to-fit=no">
-        <link href="logo.png" class="logo" rel="shortcut icon">
-        <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
-        <title> UnSéjourParfaitHotel</title>
-        
-        
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .navbar-brand img{
-          max-height: 40px;
-
+        body {
+            margin-top: 30px;
+            margin-left: 30%;
+            background: #333;
+            color: #fff;
         }
-        header .row{
-          background-image: url('vue3.jpg');
-          background-size: cover;
-          background-repeat: no-repeat; 
-          background-attachment: fixed;
-          min-height: 86vh;
-          align-items: center;
-          color:white;
-          clip-path: polygon(0 0,100% 0,100% 100%, 0% 90%);
+        .card{
+            height: 70px;
         }
-        header .formReservation{
-          background-color:rgba(0,0,0,0.5);
-          min-height: 86vh;
-          display: flex;
-          align-items: center;
-         
-        }
-        header h1{
-          font-family: 'Raleway', sans-serif;
-        }
-        header h2{
-          font-family: 'Dancing Script', cursive;
-          margin-bottom: 50px;
-        }
-        header .slogan{      
-          display: flex;
-          min-height: 70vh;
-          align-items:flex-end;
-          justify-content:flex-end;
-        }
-        @media (min-width:                                                                                                                                                                          px) { 
-          header.slogan{
-            display: none;
-          }
-         }
-         #presentation .media span{
-           color:#d7b841;
-           font-size: 3rem;
-           
-         }
-         #presentation .media{
-           padding: .5rem 1rem;
-           transition: all .3s ease-in-out; 
-           cursor: pointer;
-           border-radius: 5px;
-         }
-
-         #presentation .media:hover{
-           background-color:grey;
-         }
-         .avisClient{
-           
-           background-color: #d3dae4;
-         }
-         .avisClient span{
-           font-size: 5rem;
-           color:#17a2b8;
-         }
-         .avisClient h5{
-           font-size: 2rem;
-           color:#8888;
-         }
-         .fontChambre{
-           min-height:100vh;
-          background-image: url('chambre.jpg');
-          background-size: cover;
-          background-repeat: no-repeat; 
-          background-attachment: fixed;
-         }
-
-
-
-       
-      
-         
-     
-        
-
-       
-
     </style>
-    </head>
-        <body>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <a class="navbar-brand" href="#"><i class="fas fa-h-square"></i> HotelWeFormYou </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#Accueil">Accueil <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#presentation">Présentation</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link " href="#avis" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Avis
-                      </a>
-                      
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="Contact.html" target="_blank">Contact</a>
-                    </li>
-                  </ul>
-                </div> 
-              </nav>
-                                           <!--    H E A D E R         -->
-              <header class="container-fluid" id="Accueil">
-                  <div class="row align-items-center">
-                    <!-- ***************************** 1ere COL -->
-                      <div class="col-12 col-md-6 formReservation">
-                        <div>
-                        <h1>Hotel de Luxe</h1>
-                        <form class="form-inline">
-                          <div class="form-group mx-sm-3 mb-2">
-                            <label for="inputPassword2" class="sr-only">Password</label>
-                            <input type="date" class="form-control" name="dateReservation">
-                          </div>
-                          <button type="submit" class="btn btn-info mb-2">Voir les Disponibilités</button>
-                        </form> 
-                        </div> 
-                      </div>
-                               <!-- ***************************** 1ere COL -->
-                      <div class="col-12 col-md-6 slogan ">
-                        <h2>Vivez une Experience Unique</h2>
+</head>
 
-                      </div>
-                  </div>
-                </header>
-                <!--     *********************** offre   **************** -->
-                <div class="container" id="presentation">
-                  <div class="row">
-                    <div class="col-12 mb-4">
-                      <h2>Nos Offres</h2>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-1">
+                <h1 class="display-4 text-center mb-3">Weight Converter </h1>
+                <form>
+                    <div class="form-group">
+                        <input id="lbsInput" type="number" class="form-control form-control-lg"
+                            placeholder="Entrer Pounds ...">
                     </div>
-
-                   <div class="col-12 col-md-6">
-                    <div class="media my-3">
-                      <span><i class="fas fa-bed"></i></span>
-                      <div class="media-body ml-3">
-                        <h5 class="mt-0">Litterie de Qualité</h5>
-                         <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam maiores, quis asperiores velit, a ipsa laborum adipisci porro, minima sequi ullam vitae itaque esse quisquam magni expedita temporibus hic.</p>
-                          </div>
+                </form>
+                <div id="output">
+                    <div class="card bg-warning mb-2">
+                        <div class="card-block">
+                            <h4>Grams:</h4>
+                            <div id="gramsOutput"></div>
                         </div>
-                      </div> 
-                      <div class="col-12 col-md-6">
-                        <div class="media my-3">
-                          <span><i class="fas fa-award"></i></span>
-                          <div class="media-body ml-3">
-                            <h5 class="mt-0">Certification de Réussite</h5>
-                             <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam maiores, quis asperiores velit, a ipsa laborum adipisci porro, minima sequi ullam vitae itaque esse quisquam magni expedita temporibus hic.</p>
-                              </div>
-                            </div>
-                          </div>
-                      
-                       <div class="col-12 col-md-6">
-                        <div class="media my-3">
-                          <span><i class="fas fa-parking"></i></span>
-                          <div class="media-body ml-3">
-                            <h5 class="mt-0">Parking Privatif</h5>
-                             <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam maiores, quis asperiores velit, a ipsa laborum adipisci porro, minima sequi ullam vitae itaque esse quisquam magni expedita temporibus hic.</p>
-                              </div>
-                            </div>
-                          </div>
-                       
-                       <div class="col-12 col-md-6">
-                        <div class="media my-3">
-                          <span><i class="fas fa-plane"></i></span>
-                          <div class="media-body ml-3">
-                            <h5 class="mt-0">Proche Aéroport</h5>
-                             <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam maiores, quis asperiores velit, a ipsa laborum adipisci porro, minima sequi ullam vitae itaque esse quisquam magni expedita temporibus hic.</p>
-                              </div>
-                            </div>
-                          </div> 
-                          <div class="col-12 col-md-6">
-                            <div class="media my-3">
-                              <span><i class="fas fa-swimmer"></i></span>
-                              <div class="media-body ml-3">
-                                <h5 class="mt-0">Piscine</h5>
-                                 <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam maiores, quis asperiores velit, a ipsa laborum adipisci porro, minima sequi ullam vitae itaque esse quisquam magni expedita temporibus hic.</p>
-                                  </div>
-                                </div>
-                              </div> 
-                              <div class="col-12 col-md-6">
-                                <div class="media my-3">
-                                  <span><i class="fas fa-comments"></i></span>
-                                  <div class="media-body ml-3">
-                                    <h5 class="mt-0">Salle de Séminaire</h5>
-                                     <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam maiores, quis asperiores velit, a ipsa laborum adipisci porro, minima sequi ullam vitae itaque esse quisquam magni expedita temporibus hic.</p>
-                                      </div>
-                                    </div>
-                                  </div>
                     </div>
-                   </div>
-                  </div>
+
+                    <div class="card bg-success mb-2">
+                        <div class="card-block">
+                            <h4>Kilograms:</h4>
+                            <div id="KgOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-info mb-2">
+                        <div class="card-block">
+                            <h4>Ounces:</h4>
+                            <div id="ozOutput"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="container-fluid" id="avis">
-                  <div class="row">
-                    <div class="col-12 col-md-6 fontChambre">
-
-                    </div>
-                    <div class="col-12 col-md-6 avisClient text-center d-flex flex-column justify-content-center">
-                    <span><i class="fas fa-quote-right"></i></span>
-                    <h5 class="my-4">Léo Dupont</h5>
-                    <p>L ambiance authentique du lieu. 
-                      Endroit magique, la décoration est fabuleuse et la litterie exceptionnelle.
-                      Idéal pour une escapade romantique ! 
-                      La situation exceptionnelle et l'immense surprise du lieu de séjour quand on a la chance d'avoir une chambre dans la partie Iglésia (il faut insister, c'est fabuleux). Une ambiance unique et une excellente bande sonore.
-                      Très bonne qualité de tout ce qu'y peut se trouver .
-                    </p>
-                  </div>
-                  </div>
-                </div>  
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('output').style.visibility='hidden';
+        document.getElementById('lbsInput').addEventListener('input',function(e){
+            document.getElementById('output').style.visibility='visible';
+            let lbs = e.target.value;
+            document.getElementById('gramsOutput').innerHTML=lbs/0.0022046;
+            document.getElementById('KgOutput').innerHTML=lbs/2.2046;
+            document.getElementById('ozOutput').innerHTML=lbs*16;
+            
+        });
 
 
 
@@ -241,12 +73,24 @@
 
 
 
-               
 
 
 
 
 
-        </body>
- 
+
+    </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>
